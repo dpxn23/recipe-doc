@@ -1,8 +1,155 @@
-img {
-    width: 300px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+    --bg-colour:#edeceb;
+    --text-bg: #f7cd72;
+    --highlight: #cf8736;
+    --hover-colour: #fadbac;
+    box-sizing: border-box; 
 }
 
-.header {
+body {
+    text-align: left;
+    font-family: Helvetica, Arial, sans-serif;
+    font-stretch: semi-condensed;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+    max-width: 100%;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 250px 50px 250px;
+    background-color: whitesmoke;
+}
+
+h2 {
+    text-align: left;
+    padding: 6px;
+    background-color: var(--text-bg);
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4 {
+    text-align: left;
+    margin: 3em 0 1em 0em;
+    padding-left: 1em;
+    font-size: 12px;
+    border: 50px;
+    border-left-style: solid;
+    border-color: var(--text-bg);
+}
+
+img {
+    display: block;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--highlight);
+    letter-spacing: 6px;
+    font-size: 18px;
+    padding: 3em;
+}
+
+li a:hover {
+    color: var(--hover-colour)
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+    align-items: center;
+    font-size: 16px;
+    text-align: left;
+}
+
+section {
+    padding: 0em 1.5em 0em 1.5em;
+}
+
+.header-img {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     width: 100%;
     height: auto;
+}
+
+.recipe-card {
+    margin: 3em 3em 1em 3em;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 1.5em 3em;
+    background-color: var(--bg-colour);
+ 
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    padding: 1em 1em;
+}
+
+.research-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0em 1em 0em 1em;
+}
+
+.summary-container {
+    border: solid .5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.summary-item {
+    border: solid .5px;
+    text-align: center;
+    padding: 3em 0em;
+    font-weight: 700;
+}
+
+footer {
+    opacity: 0.7;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:var(--bg-colour);
+}
+.footer-item {
+    text-align: center;
+    padding: 1em 0em;
+}
+
+.tips-item {
+    text-align: left;
+    font-size: 12px;
+}
+
+.toc {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 0px 20px 0px;
 }
