@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 :root {
-    --bg-colour:#edeceb;
-    --text-bg: #f7cd72;
+    --border-colour:#9EBDD9;
+    --bg-colour-title: #B0D6EB;
+    --text-bg: #FFD7A3;
     --highlight: #cf8736;
     --hover-colour: #fadbac;
     box-sizing: border-box; 
@@ -21,12 +22,12 @@ h1 {
     font-size: 50px;
     text-align: center;
     padding: 50px 250px 50px 250px;
-    background-color: whitesmoke;
+    background-color:var(--bg-colour-title);
 }
 
 h2 {
     text-align: left;
-    padding: 6px;
+    padding: 10px;
     background-color: var(--text-bg);
 }
 
@@ -97,10 +98,10 @@ section {
 
 .recipe-card {
     margin: 3em 3em 1em 3em;
-    border: 1px solid;
+    border: 3px solid;
     border-radius: 10px;
+    border-color: var(--border-colour);
     padding: 1.5em 3em;
-    background-color: var(--bg-colour);
  
 }
 
@@ -130,6 +131,8 @@ section {
     text-align: center;
     padding: 3em 0em;
     font-weight: 700;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 footer {
